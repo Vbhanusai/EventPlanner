@@ -51,5 +51,11 @@ namespace EventPlanner.Controllers
             if (!ok) return NotFound();
             return NoContent();
         }
+            
+        [HttpGet("test")]
+        public IActionResult test()
+        {
+            return Ok(new { message = "API is working!" });
+        }
     }
 }
